@@ -9,6 +9,10 @@ body {
     color: #303846;
   }
   
+h1, h2, h3 {
+  margin: 0;
+}
+
 .p-20 {
     padding: 20px;
     }
@@ -18,10 +22,12 @@ body {
     }
 
 .h-100 {
-    height: 100%;
+    height: vh100;
   }
 
 .container {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
@@ -35,6 +41,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    font-weight: bold;
     height: 50px;
     top: 0;
     left: 0;
@@ -48,7 +55,7 @@ body {
 }
 
 .nav-item {
-    padding: 20px 15px;
+    padding: 20px;
     color: #FFF;
     cursor: pointer;
   }
@@ -66,10 +73,48 @@ body {
 .logo-and-name {
     align-items: center;
   }
+  
+/* Intro */
 
-  main {
-    margin-top: 100px;
-  }
+.intro {
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin-top: 80px;
+  background: url("../images/banner.png") repeat-y 100%;
+  color: #FFF;
+}
+
+.intro-logo {
+  width: 175px;
+  height: 175px;
+  margin-bottom: 30px;
+}
+
+.intro .title {
+  font-size: 3em;
+}
+
+.intro .subtitle {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  color: #FFF;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+
+
+  
 
 
 
