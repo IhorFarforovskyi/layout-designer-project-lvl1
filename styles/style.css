@@ -2,15 +2,19 @@
 
 
 body {
-    margin: 0;
-    padding: 0;
+    color: #303846;
     font-family: Roboto,'Open Sans', sans-serif;
     font-size: 16px;
-    color: #303846;
+    margin: 0;
+    padding: 0;
   }
-  
+
 h1, h2, h3 {
-  margin: 0;
+    margin: 0;
+}
+
+h2 {
+  font-size: 2em; 
 }
 
 .p-20 {
@@ -22,11 +26,12 @@ h1, h2, h3 {
     }
 
 .h-100 {
-    height: vh100;
+    height: 100%;
   }
 
 .container {
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -37,55 +42,66 @@ h1, h2, h3 {
 
 
 .navbar {
-    background: white;
     align-items: center;
-    justify-content: space-between;
-    position: fixed;
+    background: white;
+    display: flex;
     font-weight: bold;
     height: 50px;
-    top: 0;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
     left: 0;
     right: 0;
+    top: 0;
 }
 
 .nav-wrap {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .nav-item {
-    padding: 20px;
     color: #FFF;
     cursor: pointer;
+    padding: 20px;
   }
 
 .nav-item a {
-    text-decoration: none;
     color: #000;
+    text-decoration: none;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 .logo-and-name {
     align-items: center;
+    display: flex;
   }
   
-/* Intro */
+  .project-name {
+    padding: 20px;
+  }
+
+/* Intro banner */
 
 .intro {
-  justify-content: center;
   align-items: center;
-  height: 500px;
-  margin-top: 80px;
   background: url("../images/banner.png") repeat-y 100%;
+  background-position: right 95% bottom 25%;
   color: #FFF;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  margin-top: 100px;
+  width: 100%;
 }
 
-.intro-logo {
+.logo-large {
   width: 175px;
   height: 175px;
   margin-bottom: 30px;
@@ -112,9 +128,87 @@ h1, h2, h3 {
   font-size: 16px;
 }
 
+/* main content */
+
+main section {
+  width: 100%;
+  line-height: 1.5;
+}
 
 
+.features {
+  align-items: center;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  width: 100%;
   
+}
 
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+}
+
+.features-item {
+  width: 400px;
+  padding: 0 20px;
+}
+
+.features-item h2 {
+  font-size: 2em;
+}
+
+/* About  */
+
+.about {
+  align-items: center;
+  background: #f7f7f7;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-container {
+  width: 1150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-description {
+  width: 530px;
+}
+
+.about-image {
+  width: 400px;
+  height: auto;
+}
+
+/* Promo */
+
+.promo {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  width: 100%;
+}
+
+.promo-image {
+  height: auto;
+  width: 400px;
+}
+.promo-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1150px;
+}
+
+.promo-description {
+  width: 530px;
+}
 
 
