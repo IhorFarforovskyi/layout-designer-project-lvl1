@@ -18,7 +18,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 
@@ -81,16 +81,19 @@ h3 {
 .logo {
   height: 50px;
   width: 50px;
+  padding: 5px;
 }
 
 .logo-and-name {
     align-items: center;
     display: flex;
-    font-weight: bold;
   }
   
-  .project-name {
-    padding: 20px;
+  .project-name {   
+    display: flex;
+    align-self: start;
+    padding: 15px 20px;
+    font-weight: bold;
   }
 
 /* Intro */
