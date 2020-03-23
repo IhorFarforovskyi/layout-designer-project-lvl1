@@ -1,4 +1,4 @@
-/* general markup */
+/* General  */
 
 
 body {
@@ -16,6 +16,8 @@ h1, h2, h3 {
 h2 {
   font-size: 2em; 
 }
+
+
 
 .p-20 {
     padding: 20px;
@@ -38,7 +40,7 @@ h2 {
   }
 
 
-/* navbar */
+/* Navbar */
 
 
 .navbar {
@@ -87,7 +89,7 @@ h2 {
     padding: 20px;
   }
 
-/* Intro banner */
+/* Intro */
 
 .intro {
   align-items: center;
@@ -97,7 +99,7 @@ h2 {
   display: flex;
   height: 500px;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 80px;
   width: 100%;
 }
 
@@ -128,13 +130,12 @@ h2 {
   font-size: 16px;
 }
 
-/* main content */
+/* Main content */
 
 main section {
   width: 100%;
   line-height: 1.5;
 }
-
 
 .features {
   align-items: center;
@@ -142,7 +143,6 @@ main section {
   height: 300px;
   justify-content: center;
   width: 100%;
-  
 }
 
 .features-container {
@@ -152,17 +152,15 @@ main section {
 }
 
 .features-item {
-  width: 400px;
   padding: 0 20px;
+  width: 400px;
 }
 
-.features-item h2 {
-  font-size: 2em;
-}
 
-/* About  */
+/* Create single class for both SECTIONS!!! */
 
-.about {
+
+.about, .promo {
   align-items: center;
   background: #f7f7f7;
   display: flex;
@@ -171,44 +169,118 @@ main section {
   width: 100%;
 }
 
-.about-container {
+.about-container, .promo-container {
   width: 1150px;
   display: flex;
   justify-content: space-between;
 }
 
-.about-description {
+.about-description, .promo-description {
   width: 530px;
 }
 
-.about-image {
+.about-image, .promo-image {
   width: 400px;
   height: auto;
 }
 
-/* Promo */
-
 .promo {
-  align-items: center;
   background: #fff;
+}
+
+/* Form  */
+
+.form {
+  align-items: center;
+  background: #f7f7f7;
   display: flex;
-  height: 400px;
+  flex-direction: column;
+  height:100vh;
   justify-content: center;
   width: 100%;
 }
 
-.promo-image {
-  height: auto;
-  width: 400px;
+.form-title {
+  margin: 1em 0;
 }
-.promo-container {
+
+.form-container {
+  box-sizing: border-box;
+  color: #5fd9b9;
+  display: flex;
+  height: auto;
+  margin-top: 1em;
+  padding: 25px;
+  width: 500px;
+}
+
+.p-right {
+  padding-right: 75px;
+}
+
+.form-item {
   display: flex;
   justify-content: space-between;
-  width: 1150px;
+  align-items: center;
 }
 
-.promo-description {
-  width: 530px;
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  /* padding-top: 1em; */
+}
+
+.bold {
+  font-weight: bold;
+  color: #000;
 }
 
 
+input[type=text], select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: 6px 0;
+}
+
+select {
+  width: 40%;
+}
+
+input[type=text] {
+  width: 60%;
+}
+
+.form-btn {
+  display: inline-block;
+  color: #5fd9b9;
+  background-color: transparent;
+  border: 1px solid #5fd9b9;;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 40px;
+  margin-top: 20px;
+  font-size: 16px;
+  
+}
+
+
+
+
+
+
+
+
+
+/* 
+
+#5fd9b9
+
+#00a685
+
+
+#5edec4 */

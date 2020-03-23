@@ -28,7 +28,7 @@
                 <img src="images/logo.svg" alt="Логотип" class="logo-large">
                 <h1 class="title">ЖК «Лунное море»</h1>
                 <p class="subtitle">Место, откуда не хочется улетать</p>
-                <a href="#" class="btn">Забронировать</a>
+                <a href="#form" class="btn">Забронировать</a>
             </section>
         </header>
         <main>
@@ -72,9 +72,48 @@
                         </div>
                     </div>
                 </div>
-
             </section>
-        </main>
+            <section class="form">
+                <h2 class="form-title">Оставьте заявку сегодня!</h2>
+                <form action="#" id="form">
+                    <fieldset class="form-container p-right">
+                            <legend>Параметры квартиры</legend>
+                            <div class="form-item">
+                                <label class="bold" for="rooms-form">Количество комнат:</label>
+                                <select id="rooms-form" class="form-item">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <div class="form-item">
+                            <label class="bold" for="finishing-form">Отделка:</label>
+                                <select id="finishing-form" class="form-item"> 
+                                    <option>С отделкой</option>
+                                    <option selected>Без отделки</option>
+                                    <option>Двойная отделка</option>
+                                </select>
+                            </div>
+                    </fieldset>
+                    <fieldset class="form-container">
+                        <legend>Контактная информация</legend>
+                        <form action="#">
+                            <div class="form-item">
+                                <label for="name" class="bold">Имя</label>
+                                <input type="text" id="name" name="firstname">
+                            </div>
+                            <div class="form-item">
+                                <label for="phone" class="bold">Телефон</label>
+                                <input type="text" id="phone" name="phone">
+                            </div>
+                            <div class="form-item" class="bold">
+                                <label for="mail" class="bold">E-mail</label>
+                                <input type="text" id="mail" name="e-mail">  
+                            </div>
+                    </fieldset>
+                    <a class="form-btn" href="#">Отправить</a>
+        </section>
+    </main>
         <!-- <footer>
             <div>Подвал страницы ЖК «Лунное море»</div>
         </footer> -->
