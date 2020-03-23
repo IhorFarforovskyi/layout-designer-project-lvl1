@@ -19,20 +19,9 @@ h2 {
 
 h3 {
   font-size: 1.3em;
+  padding-top: 10px;
 }
 
-
-.p-20 {
-    padding: 20px;
-    }
-
-.d-flex {
-    display: flex;
-    }
-
-.h-100 {
-    height: 100%;
-  }
 
 .container {
     width: 100%;
@@ -89,12 +78,12 @@ h3 {
     display: flex;
   }
   
-  .project-name {   
-    display: flex;
-    align-self: start;
-    padding: 15px 20px;
-    font-weight: bold;
-  }
+.project-name {   
+  display: flex;
+  align-self: start;
+  padding: 18px 20px;
+  font-weight: bold;
+}
 
 /* Intro */
 
@@ -116,11 +105,11 @@ h3 {
   margin-bottom: 30px;
 }
 
-.intro .title {
+.title {
   font-size: 3em;
 }
 
-.intro .subtitle {
+.subtitle {
   font-size: 1.2em;
   margin-top: 10px;
 }

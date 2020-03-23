@@ -18,9 +18,9 @@
                 </div>
                 <nav>
                     <ul class="nav-wrap">
-                        <li class="nav-item"><a href="#">Преимущества</a></li>
-                        <li class="nav-item"><a href="#">О ЖК</a></li>
-                        <li class="nav-item"><a href="#">Места для отдыха</a></li>
+                        <li class="nav-item"><a href="#features">Преимущества</a></li>
+                        <li class="nav-item"><a href="#about">О ЖК</a></li>
+                        <li class="nav-item"><a href="#places">Места для отдыха</a></li>
                     </ul>
                 </nav>
             </div>
@@ -32,23 +32,23 @@
             </section>
         </header>
         <main>
-            <section class="features">
+            <section class="features" id="features">
                <div class="features-container">
-                <div class="features-item">
-                    <h2>Уникальный вид</h2>
-                    <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками. </p>
-                </div>
-                <div class="features-item">
-                    <h2>Инфраструктура</h2>
-                    <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные. </p>
-                </div>
-                <div class="features-item">
-                    <h2>Близость к Москве</h2>
-                    <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России. </p>
-                </div>
+                    <div class="features-item">
+                        <h2>Уникальный вид</h2>
+                        <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками. </p>
+                    </div>
+                    <div class="features-item">
+                        <h2>Инфраструктура</h2>
+                        <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные. </p>
+                    </div>
+                    <div class="features-item">
+                        <h2>Близость к Москве</h2>
+                        <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России. </p>
+                    </div>
                 </div>
             </section>
-            <section class="places ">
+            <section class="places" id="about">
                 <div class="places-container">
                     <div class="places-description">
                         <h2>О ЖК «Лунное море»</h2>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </section>
-            <section class="places places-background">
+            <section class="places places-background" id="places">
                 <div class="places-container">
                     <div>
                         <img class="places-image" src="images/moon-2.jpg" alt="man-om-moon-image">
@@ -71,7 +71,6 @@
                         <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
                         </div>
                     </div>
-                </div>
             </section>
             <section class="form">
                 <h2 class="form-title">Оставьте заявку сегодня!</h2>
@@ -97,7 +96,6 @@
                     </fieldset>
                     <fieldset class="form-container">
                         <legend>Контактная информация</legend>
-                        <form action="#">
                             <div class="form-item">
                                 <label for="name" class="bold">Имя</label>
                                 <input type="text" id="name" name="firstname">
@@ -106,12 +104,13 @@
                                 <label for="phone" class="bold">Телефон</label>
                                 <input type="text" id="phone" name="phone">
                             </div>
-                            <div class="form-item" class="bold">
+                            <div class="form-item">
                                 <label for="mail" class="bold">E-mail</label>
                                 <input type="text" id="mail" name="e-mail">  
                             </div>
                     </fieldset>
                     <a class="form-btn" href="#">Отправить</a>
+             </form>
         </section>
     </main>
     <footer class="footer">
