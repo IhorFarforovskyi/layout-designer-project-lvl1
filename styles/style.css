@@ -1,12 +1,16 @@
+:root {
+  --header-height: 80px;
+}
+
 body {
   color: #303846;
   font-family: Roboto,'Open Sans', sans-serif;
   font-size: 16px;
-  margin: 100px 0 0 0;
+  margin: 0;
+  margin-top: var(--header-height);
   padding: 0;
   position: relative;
 }
-
 
 
 main, footer {
@@ -39,7 +43,7 @@ a {
 }
 
 
-.a-center {
+.align-items-center {
   align-items: center;
 }
 
@@ -59,12 +63,13 @@ a {
 
 
 header {
+    background: #FFF;
     justify-content: space-between;
     position: fixed;
-    background: #FFF;
     left: 0;
     right: 0;
     top: 0;
+    height: var(--header-height);
 }
 
 .nav-wrap {
@@ -76,7 +81,7 @@ header {
 .logo {
   height: 50px;
   width: 50px;
-  padding: 5px;
+  padding: 20px;
 } 
 
 /* MAIN */
@@ -219,10 +224,13 @@ input[type=text] {
   width: 60%;
 }
 
-.form-btn {
+.btn-grey {
   color: #5fd9b9;
   background-color: transparent;
   border-color: #5fd9b9;
+}
+
+form .btn {
   padding: 12px 30px;
   align-self: flex-start;
 }
